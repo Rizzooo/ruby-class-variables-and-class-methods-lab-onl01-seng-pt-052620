@@ -36,7 +36,7 @@ class Song
     artist_count = {}
     a_count = 0 
     @@artists.each.uniq do |a| 
-      if artist_count.exclude?(a)
+      if artist_count.include?(a)
         a_count += 1 
         arist_count[a] = a_count
       else
