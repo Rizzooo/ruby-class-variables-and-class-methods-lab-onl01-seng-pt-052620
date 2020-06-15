@@ -37,9 +37,9 @@ class Song
     a_count = 1 
     @@artists.each do |a| 
       if artist_count.include?(a)
-        artist_count[a] = #{a_count} += 1
+        artist_count[a] = a_count += 1
       else
-        artist_count[a] = #{a_count}
+        artist_count[a] = a_count
       end
     end
   end
