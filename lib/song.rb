@@ -24,6 +24,10 @@ class Song
     
   end
   
+  def self.artist 
+    @@artists
+  end
+
   def self.artist_count
     artist_count = {}
     a_count = 0 
