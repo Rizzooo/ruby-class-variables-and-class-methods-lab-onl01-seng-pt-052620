@@ -26,10 +26,10 @@ class Song
   
   def self.artist_count
     artist_count = {}
-    a_count = 0 
+    @a_count = 0 
     @@artists.each.uniq do |a| 
-      if artist_count[a].include?(a)
-        a_count += 1 
+      if artist_count.
+        artist_count[a] = @a_count += 1 
       end
     end
   end
